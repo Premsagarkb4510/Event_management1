@@ -1,0 +1,84 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% extends 'index.html' %}
+<!-- //header -->
+{% load static %}
+{% block content %}
+
+
+<style>
+.hide{
+display:none;
+}
+  .container {
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+  }
+  .turf {
+   width: 30%;
+   margin-bottom: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .turf img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+  }
+
+  }
+  .turf h2 {
+   margin-top: 0;
+   font-size: 1.5rem;
+   font-weight: bold;
+  }
+  .turf p {
+   margin: 10px 0;
+   font-size: 1rem;
+   color: #666;
+  }
+  .turf ul {
+   margin: 10px 0;
+   padding-left: 20px;
+   list-style: disc;
+  }
+  .turf button {
+   background-color: #007bff;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  }
+  .turf button:hover {
+   background-color: #0062cc;
+  }
+ </style>
+ <div class="container">
+  <div class="turf">
+   {% for i in r %}
+
+   <h2>ARABIAN EVENTS</h2>
+   <p>Address: 123 Main Street, City, State ZIP</p>
+    <p>place: thalikulam</p>
+       <p>contact:9684252211</p>
+
+   <button>Book Now</button>
+  </div>
+
+ </div>
+
+
+{% endblock %}
+
+<!-- footer -->	

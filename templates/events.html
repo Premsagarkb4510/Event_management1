@@ -1,0 +1,173 @@
+{% extends 'index.html' %}
+<!-- //header -->
+{% load static %}
+{% block content %}
+
+<style>
+.hide{
+display:none;
+}
+.top_header{
+	display : none;
+}
+  .container {
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+  }
+  .turf {
+   width: 30%;
+   margin-bottom: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .turf img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+  }
+
+  }
+  .turf h2 {
+   margin-top: 0;
+   font-size: 1.5rem;
+   font-weight: bold;
+  }
+  .turf p {
+   margin: 10px 0;
+   font-size: 1rem;
+   color: #666;
+  }
+  .turf ul {
+   margin: 10px 0;
+   padding-left: 20px;
+   list-style: disc;
+  }
+  .turf button {
+   background-color: #007bff;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  }
+  .turf button:hover {
+   background-color: #0062cc;
+  }
+ </style>
+ <div class="container">
+  <div class="turf">
+   <img src='{% static "images/images arb.jpg" %}' alt="ARABIAN">
+   <h2>ARABIAN EVENTS</h2>
+   <p>Address: 123 Main Street, City, State ZIP</p>
+    <p>place: thalikulam</p>
+       <p>contact:9684252211</p>
+
+
+   <p>package:</p>
+   <ul>
+    <li>food only</li>
+   </ul>
+   <p>Price: free</p>
+   <button>Book Now</button>
+  </div>
+  <div class="turf">
+   <img src="static/images/2.jpg" alt="Turf 2">
+   <h2>Turf Name 2</h2>
+   <p>Address: 456 Main Street, City, State ZIP</p>
+   <p>Facilities:</p>
+   <ul>
+    <li>Field</li>
+    <li>Lighting</li>
+    <li>Parking</li>
+    <li>Restrooms</li>
+   </ul>
+   <p>Price: $60/hour</p>
+   <button>Book Now</button>
+  </div>
+  <div class="turf">
+   <img src="static/images/3.jpg" alt="Turf 3">
+   <h2>Turf Name 3</h2>
+   <p>Address: 789 Main Street, City, State ZIP</p>
+   <p>Facilities:</p>
+   <ul>
+    <li>Field</li>
+    <li>Lighting</li>
+    <li>Parking</li>
+    <li>Restrooms</li>
+    <li>Concession Stand</li>
+   </ul>
+   <p>Price: $70/hour</p>
+   <button>Book Now</button>
+  </div>
+ </div>
+<!-- Recent Events -->
+<section class="Recent Events py-5">
+	<div class="container py-sm-3">
+		<h3 class="heading text-capitalize mb-lg-5 mb-4"> Recent Events</span> </h3>
+		<div class="row course-grids">
+			<div class="col-lg-4 col-md-6">
+				<div class="card">
+				  <img class="card-img-top" src='{% static "images/who.jpg" %}' alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Wedding Ceremony</h5>
+					<p class="card-text mb-3">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures elit turpis, at bibendum lib dolor sedet lib blandit interd ures elit.....</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+				<div class="card">
+				  <img class="card-img-top" src='{% static "images/bg.jpg" %}' alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Event Celebration</h5>
+					<p class="card-text mb-3">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures elit turpis, at bibendum lib dolor sedet lib blandit interd ures elit.....</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+				<div class="card">
+				  <img class="card-img-top" src='{% static "images/who.jpg" %}' alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Birthday Party</h5>
+					<p class="card-text mb-3">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures elit turpis, at bibendum lib dolor sedet lib blandit interd ures elit....</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-5">
+				<div class="card">
+				  <img class="card-img-top" src='{% static "images/bg.jpg" %}' alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Anniversary Event</h5>
+					<p class="card-text mb-3">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures elit turpis, at bibendum lib dolor sedet lib blandit interd ures elit....</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-5">
+				<div class="card">
+				  <img class="card-img-top" src='{% static "images/who.jpg" %}' alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Wedding Organizer</h5>
+					<p class="card-text mb-3">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures elit turpis, at bibendum lib dolor sedet lib blandit interd ures elit....</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-5">
+				<div class="card">
+				  <img class="card-img-top" src='{% static "images/bg.jpg" %}' alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Birthday Party</h5>
+					<p class="card-text mb-3">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures elit turpis, at bibendum lib dolor sedet lib blandit interd ures elit....</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Recent Events -->
+{% endblock %}
+<!-- footer -->	

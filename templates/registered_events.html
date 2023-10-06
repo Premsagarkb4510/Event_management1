@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Caterers Waiting for Approval</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+	</style>
+</head>
+<body>
+	<h1>Registered Caterers</h1>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Name of team</th>
+			<th>Address</th>
+			<th>Contact Number</th>
+			<th>License</th>
+			<th>Email</th>
+		</tr>
+		{% for i in r %}
+		<tr>
+			<td>{{i.Username}}</td>
+			<td>{{i.Team_name}}</td>
+			<td>{{i.Address}}</td>
+			<td>{{i.Contact}}</td>
+			<td>{{i.License}}</td>
+			<td>{{i.Email}}</td>
+		</tr>
+		{% endfor %}
+		<!-- Add more rows for additional event caterers -->
+	</table>
+</body>
+</html>
